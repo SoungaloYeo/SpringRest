@@ -5,6 +5,7 @@
  */
 package ci.j2code.resources;
 
+import ci.j2code.entities.Departement;
 import ci.j2code.entities.Ville;
 import ci.j2code.service.IVilleService;
 import java.util.List;
@@ -34,7 +35,12 @@ public class VilleRestController {
     }
     
     @PostMapping("/villes")
-    public Ville saveOrUpdate(@RequestBody Ville ville) {
+    public Ville save(@RequestBody Ville ville) {         
+        return this.iVilleService.createVille(ville);
+    }
+    
+    @PostMapping("/villes")
+    public Ville update(@RequestBody Ville ville) {         
         return this.iVilleService.createVille(ville);
     }
     

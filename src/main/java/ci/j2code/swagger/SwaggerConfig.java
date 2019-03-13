@@ -38,5 +38,5 @@ public class SwaggerConfig {
 				.licenseUrl("soungaloyeo@gmail.com").version("1.0").build();
 	}
 
-        Contact contact = new Contact("YEO Soungalo", "objis.com","10000codeurs@gmail.com");
+        Contact contact = new Contact("YEO Soungalo", "objis.com","yeo@10000codeurs.com");
 }
